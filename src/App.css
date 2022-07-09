@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');
+
+.App {
+    overflow: hidden;
+}
+body {
+    font-family: 'Edu SA Beginner';
+    font-size: larger;
+    background: black;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+a:hover {
+    color: #b621fe;
+}
+
+link {
+    text-decoration: none;
+}
+/* img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+/* Styles */
+.navbarr {
+    box-shadow: 0 8px 12px -8px #1fd1f9;
+}
+.social-icons {
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: x-large;
+    cursor: pointer;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    width: 90%;
+}
+.header-flex-box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.header-button {
+    width: 15rem;
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    color: white;
+    padding: 10px;
+    cursor: none;
+    border: none;
+}
+
+
+/* Responsive */
+@media (max-width: 767px) {
+    .header-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .header-flex-box {
+        width: 100%;
+        align-items: center;
+        margin-top: 2rem;
+        text-align: center;
+    }
+  }
