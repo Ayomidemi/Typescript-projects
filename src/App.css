@@ -1,82 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
 
-.App {
-    overflow: hidden;
-}
 body {
-    font-family: 'Edu SA Beginner';
-    font-size: larger;
-    background: black;
-    color: white;
+  font-family: "Edu SA Beginner";
+  font-size: larger;
+  background: black;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #1fd1f9;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: grey;
 }
 a {
-    text-decoration: none;
-    color: unset;
+  text-decoration: none;
+  color: unset;
 }
 a:hover {
-    color: #b621fe;
+  color: #b621fe;
 }
 
 link {
-    text-decoration: none;
+  text-decoration: none;
 }
-/* img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
 
 /* Styles */
 .navbarr {
-    box-shadow: 0 8px 12px -8px #1fd1f9;
+  box-shadow: 0 8px 12px -8px #1fd1f9;
 }
 .social-icons {
-    border: 1px solid white;
-    padding: 3px;
-    border-radius: 50%;
-    margin-right: 15px;
-    font-size: x-large;
-    cursor: pointer;
+  border: 1px solid white;
+  padding: 3px;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: x-large;
+  cursor: pointer;
 }
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 .header-flex {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15%;
-    width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  width: 90%;
 }
 .header-flex-box {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
 .header-button {
-    width: 15rem;
-    background-color: #1fd1f9;
-    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-    color: white;
-    padding: 10px;
-    cursor: none;
-    border: none;
+  width: 15rem;
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  color: white;
+  padding: 10px;
+  cursor: none;
+  border: none;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #b621fe 0%, #1fd1f9 94%);
+  min-height: 100vh;
+}
+.skills-container {
+    background: black;
+    border-radius: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-title h1 {
+  color: #b621fe;
+  font-size: 4rem;
+}
+@keyframes rotat {
+    100% {transform: rotate(1turn);}
+}
+.rounded {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid #1fd1f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(to right, #b621fe, #1fd1f9);
+    position: absolute;
+    animation: rotat 6s linear infinite reverse ;
+}
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+    width: 90%;
+}
+.portfolio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* Responsive */
 @media (max-width: 767px) {
-    .header-flex {
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    .header-flex-box {
+  .header-flex {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .header-flex-box {
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+    .carousel {
         width: 100%;
-        align-items: center;
-        margin-top: 2rem;
-        text-align: center;
     }
   }
