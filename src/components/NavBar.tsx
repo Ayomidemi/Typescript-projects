@@ -1,11 +1,27 @@
 import * as React from "react";
 
+import resume from "../img/resume.pdf";
+
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 interface INavBarProps {}
 
-const NavBar: React.FunctionComponent<INavBarProps> = (props) => {
+const NavBar: React.FunctionComponent<INavBarProps> = () => {
+  const [click, setClick] = React.useState(false);
+
+  const scrollTo = (id: string) => {
+    let element: any = document.getElementById(id);
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+
+    setClick(!click);
+  };
+
   return (
     <>
       <Navbar fixed="top" className="navbarr" expand="lg" variant="dark">
@@ -26,14 +42,23 @@ const NavBar: React.FunctionComponent<INavBarProps> = (props) => {
             className="justify-content-end"
             id="responsive-navbar-nav"
           >
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link onClick={() => scrollTo("home")} className="text-white">
               Home
             </Nav.Link>
-            <Nav.Link href="/skills" className="text-white">
+            <Nav.Link onClick={() => scrollTo("skills")} className="text-white">
               Skills
             </Nav.Link>
-            <Nav.Link href="/projects" className="text-white">
+            <Nav.Link
+              onClick={() => scrollTo("projects")}
+              className="text-white"
+            >
               Projects
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => scrollTo("contact")}
+              className="text-white"
+            >
+              Contact
             </Nav.Link>
 
             <div>
@@ -60,15 +85,11 @@ const NavBar: React.FunctionComponent<INavBarProps> = (props) => {
               </a>
             </div>
 
-            <Button variant="outline-light">
-              <a
-                href="https://www.linkedin.com/in/peace-adeniji"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Let's Connect
-              </a>
-            </Button>
+            <a href={resume} download>
+              <Button variant="outline-light" style={{ fontWeight: "bolder" }}>
+                Download CV
+              </Button>
+            </a>
           </Navbar.Collapse>
         </Container>
       </Navbar>

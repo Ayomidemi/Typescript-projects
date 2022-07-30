@@ -1,0 +1,58 @@
+const projects = [
+    {
+      id: 1,
+      link1: "https://www.penielday.org/",
+      link2: "https://github.com/Ayomidemi/peniel-day-foundation",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/6348119/pexels-photo-6348119.jpeg?cs=srgb&dl=pexels-liza-summer-6348119.jpg&fm=jpg',
+      title: "Peniel Day Foundation",
+    },
+    {
+      id: 2,
+      link1: "https://eficoresource.com/",
+      link2: "https://github.com/Efico-Resources/Efico-React",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?cs=srgb&dl=pexels-pixabay-416405.jpg&fm=jpg',
+      title: "Efico Resource",
+    },
+    {
+      id: 3,
+      link1: "https://nft-landing-page-by-peace.netlify.app/",
+      link2: "https://github.com/Ayomidemi/nft-landing-page",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/12188470/pexels-photo-12188470.jpeg?cs=srgb&dl=pexels-markus-winkler-12188470.jpg&fm=jpg',
+      title: "NFT Landing Page",
+    },
+    {
+      id: 4,
+      link1: "https://coco-ecommerce.netlify.app/",
+      link2: "https://github.com/Ayomidemi/CoCo-eCommerce",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/6214471/pexels-photo-6214471.jpeg?cs=srgb&dl=pexels-nataliya-vaitkevich-6214471.jpg&fm=jpg',
+      title: "E-Commerce App",
+    },
+    {
+      id: 5,
+      link1: "https://2dofi.netlify.app/",
+      link2: "https://github.com/Ayomidemi/Typescript-2dofi",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/11911068/pexels-photo-11911068.jpeg?cs=srgb&dl=pexels-dlxmediahu-11911068.jpg&fm=jpg',
+      title: " TypeScript 2dofi",
+    },
+    {
+      id: 6,
+      link1: "https://peace-portfolio.netlify.app/",
+      link2: "https://github.com/Ayomidemi/peace-portfolio",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/7828670/pexels-photo-7828670.jpeg?cs=srgb&dl=pexels-mikhail-nilov-7828670.jpg&fm=jpg',
+      title: "React JS Portfolio",
+    },
+  ];
+  
+  export default projects;

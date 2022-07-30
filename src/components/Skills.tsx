@@ -5,10 +5,10 @@ interface ISkillsProps {}
 
 const Skills: React.FunctionComponent<ISkillsProps> = (props) => {
   return (
-    <div className="skills">
+    <div className="skills" id='skills'>
       <div className="skills-container">
         <div className="skills-title">
-          <h1>Skills</h1>
+          <h1 className='skills-title-h1'>Skills</h1>
           <h3>
             My expertise is in the area of responsive design. With every line of
             code, I strive to make the web a beautiful place. Welcome to my

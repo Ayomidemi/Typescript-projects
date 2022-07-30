@@ -3,8 +3,8 @@ import './App.css';
 import ConfettiComponent from './components/ConfettiComponent';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <Header />
       <Skills />
-      <Portfolio />
+      <Projects />
     </div>
   );
 }

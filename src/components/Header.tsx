@@ -8,7 +8,7 @@ interface IHeaderProps {}
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   return (
     <>
-      <div className="header-container">
+      <div className="header-container" id='home'>
         <div className="header-flex">
           <div className="header-flex-box">
             <button className="header-button">Welcome to my portfolio</button>
