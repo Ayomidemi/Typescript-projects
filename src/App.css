@@ -35,6 +35,7 @@ link {
   box-shadow: 0 8px 12px -8px #1fd1f9;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+  overflow: hidden;
 }
 .social-icons {
   border: 1px solid white;
@@ -49,6 +50,7 @@ link {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 .header-flex {
   display: flex;
@@ -79,13 +81,13 @@ link {
 }
 .skills-container {
   background: black;
-  border-radius: 50px;
+  border-radius: 30px;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2%;
+  padding: 2% 0;
 }
 .skills-title {
   width: 80%;
@@ -217,6 +219,7 @@ link {
   border: 1px solid #1fd1f9;
   background: #1fd1f9;
   margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 .nav-tabs .nav-link.active {
   color: white;
@@ -225,7 +228,6 @@ link {
   border: 1px solid #b621fe;
   background: #b621fe;
   margin-right: 2rem;
-  margin-bottom: 1rem;
 }
 .contact-container {
   display: flex;
@@ -263,7 +265,8 @@ textarea {
   z-index: 5;
   max-width: 380px;
   width: auto;
-  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
   border-radius: 0.8rem;
   box-shadow: 2px 2px #464a4b;
   animation: slideIn 1.4s cubic-bezier(1, 0.19, 0.51, 1.19);
@@ -278,9 +281,10 @@ textarea {
 
 .notification-container p {
   margin-left: 1.9rem;
-  line-height: 1.3rem;
-  font-size: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  color: black;
 }
 
 .notification-container .icon {
@@ -288,6 +292,7 @@ textarea {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 1.5rem;
 }
 .success {
   color: #1fd1f9;
@@ -299,8 +304,7 @@ textarea {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  font-size: 1.5rem;
   border-radius: 50%;
   transition: 0.2s linear;
 }
@@ -333,6 +337,9 @@ textarea {
 .footer-logo {
   color: #b621fe;
 }
+.footer-right {
+  text-align: right;
+}
 
 /* Responsive */
 @media (max-width: 767px) {
@@ -345,6 +352,12 @@ textarea {
     align-items: center;
     margin-top: 2rem;
     text-align: center;
+  }
+  .skills-container {
+    width: 90%;
+  }
+  .skills-title {
+    width: 90%;
   }
   .all-projects-container {
     flex-wrap: nowrap;
@@ -371,7 +384,14 @@ textarea {
   .carousel {
     width: 100%;
   }
-  /* .footer-container {
+  .footer-container {
     flex-direction: column;
-  } */
+    text-align: center;
+  } 
+  .footer-right {
+    text-align: center;
+  }
+  .toast-notification {
+    max-width: 300px;
+  }
 }

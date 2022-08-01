@@ -60,7 +60,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
       .then((res) => {
         setMessage({
           type: "success",
-          msg: "",
+          msg: 'message',
         });
         setTimeout(() => {
           setMessage({
@@ -154,6 +154,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
                   onChange={handleInputChange}
                   placeholder="First Name"
                   style={{ marginRight: "1rem" }}
+                  required
                 />
                 <input
                   type="text"
@@ -161,6 +162,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
                   onChange={handleInputChange}
                   value={contact.last_name}
                   placeholder="Last Name"
+                  required
                 />
               </div>
 
@@ -171,6 +173,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
                   placeholder="Email Address"
                   onChange={handleInputChange}
                   value={contact.email}
+                  required
                   style={{ marginRight: "1rem" }}
                 />
                 <input
@@ -178,6 +181,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
                   name="phone_no"
                   onChange={handleInputChange}
                   value={contact.phone_no}
+                  required
                   placeholder="Phone No."
                 />
               </div>
@@ -187,7 +191,8 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
                 placeholder="Message"
                 onChange={handleTextAreaChange}
                 value={contact.message}
-                style={{ height: "150px" }}
+                  required
+                  style={{ height: "150px" }}
               ></textarea>
 
               <button type="submit" className="header-button">

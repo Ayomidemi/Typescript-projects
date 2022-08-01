@@ -11,7 +11,7 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
             <div className="footer-logo">
               <h1>PEASE</h1>
             </div>
-            <div className="footer-right" style={{textAlign: 'right'}}>
+            <div className="footer-right">
             <div>
               <a
                 href="https://www.linkedin.com/in/peace-adeniji"
@@ -37,7 +37,7 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
             </div>
 
             <p>Made with &#10084; by <a href="http://github.com/Ayomidemi"> 
-            <b> Peace Adeniji</b> </a></p>
+            <b> Pease Adeniji</b> </a></p>
             </div>
         </div>
     </div>
