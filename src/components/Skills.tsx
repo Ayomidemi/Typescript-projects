@@ -13,7 +13,7 @@ const Skills: React.FunctionComponent<ISkillsProps> = (props) => {
             <h3>
               My expertise is in the area of responsive design. With every line
               of code, I strive to make the web a beautiful place. Welcome to my
-              space and let's make something special!
+              space and check out my skills below!
             </h3>
 
             <div className="carousel">
@@ -58,7 +58,7 @@ const Skills: React.FunctionComponent<ISkillsProps> = (props) => {
                     <GiCheckMark className="skills-icon" />
                   </div>
                 </div>
-                <h3>Bootstrap</h3>
+                <h3>APIs</h3>
               </div>
               <div className="skills-carousel">
                 <div className="rounded">
