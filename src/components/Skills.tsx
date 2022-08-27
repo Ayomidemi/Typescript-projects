@@ -50,7 +50,7 @@ const Skills: React.FunctionComponent<ISkillsProps> = (props) => {
                     <GiCheckMark className="skills-icon" />
                   </div>
                 </div>
-                <h3> SCSS </h3>
+                <h3> SCSS/Tailwind </h3>
               </div>
               <div className="skills-carousel">
                 <div className="rounded">
@@ -58,7 +58,7 @@ const Skills: React.FunctionComponent<ISkillsProps> = (props) => {
                     <GiCheckMark className="skills-icon" />
                   </div>
                 </div>
-                <h3>APIs</h3>
+                <h3>Restful APIs</h3>
               </div>
               <div className="skills-carousel">
                 <div className="rounded">

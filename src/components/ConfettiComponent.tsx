@@ -10,7 +10,7 @@ const ConfettiComponent: React.FunctionComponent<IConfettiComponentProps> = (pro
   return (
     <>
     <Confetti
-      numberOfPieces={20}
+      numberOfPieces={10}
       gravity={0.05}
         width={width}
         height={height}

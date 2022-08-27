@@ -28,6 +28,15 @@ const projects = [
     },
     {
       id: 4,
+      link1: "https://tailwind-finance-landing-page.netlify.app/",
+      link2: "https://github.com/Ayomidemi/Tailwind-LandingPage",
+      icon1: "Website",
+      icon2: "Github",
+      image: 'https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?cs=srgb&dl=pexels-essow-936722.jpg&fm=jpg',
+      title: "Tailwind UX Design",
+    },
+    {
+      id: 5,
       link1: "https://coco-ecommerce.netlify.app/",
       link2: "https://github.com/Ayomidemi/CoCo-eCommerce",
       icon1: "Website",
@@ -36,7 +45,7 @@ const projects = [
       title: "E-Commerce App",
     },
     {
-      id: 5,
+      id: 6,
       link1: "https://2dofi.netlify.app/",
       link2: "https://github.com/Ayomidemi/Typescript-2dofi",
       icon1: "Website",
@@ -45,7 +54,7 @@ const projects = [
       title: " TypeScript 2dofi",
     },
     {
-      id: 6,
+      id: 7,
       link1: "https://peace-portfolio.netlify.app/",
       link2: "https://github.com/Ayomidemi/peace-portfolio",
       icon1: "Website",
